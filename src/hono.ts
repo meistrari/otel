@@ -1,3 +1,3 @@
 import { otel } from '@hono/otel'
 
-export default otel()
+export const instrumentationMiddleware = otel()
