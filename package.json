@@ -7,8 +7,7 @@
   "exports": {
     ".": {
       "types": "./dist/instrument.d.ts",
-      "import": "./dist/instrument.mjs",
-      "require": "./dist/instrument.cjs"
+      "import": "./dist/instrument.mjs"
     },
     "./hono": {
       "types": "./dist/hono.d.ts",
