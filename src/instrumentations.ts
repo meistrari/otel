@@ -9,7 +9,9 @@ const instrumentations = [
     const { FetchInstrumentation } = await import('@opentelemetry/instrumentation-fetch')
     process.release.name = 'node'
 
-    return new FetchInstrumentation()
+    return new FetchInstrumentation({
+      propagateTraceHeaderCorsUrls: /.*/,
+    })
   })(),
   // new FetchInstrumentation(),
 ]
